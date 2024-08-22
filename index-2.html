@@ -1,0 +1,130 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Аптека - Спеціальні Пропозиції</title>
+    <style
+      lang="uk"
+      media="screen"
+    >
+      body {
+          font-family: Arial, sans-serif;
+      }
+      .highlight {
+          background-color: #f9f9f9;
+          padding: 10px;
+          border: 1px solid #ddd;
+      }
+      .special-offer {
+          color: red;
+          font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Спеціальні Пропозиції Аптеки "Здоров'я"</h1>
+    </header>
+
+    <aside
+      id="sidebar"
+      style="float: right; width: 30%"
+    >
+      <h2>Корисна Інформація</h2>
+      <p>Знижки на всі препарати до 20% на цьому тижні!</p>
+    </aside>
+
+    <div
+      id="content"
+      style="margin-right: 35%"
+    >
+      <h2 class="highlight">Наші нові пропозиції:</h2>
+
+      <img
+        src="pharmacy-offer.jpg"
+        height="300"
+        vspace="10"
+        hspace="10"
+        class="offer-image"
+        usemap="#offer-map"
+      />
+      <map name="offer-map">
+        <area
+          shape="rect"
+          coords="34,44,270,350"
+          href="offer1.html"
+          alt="Знижка 1"
+          onblur="alert('You left the area');"
+          accesskey="1"
+          lang="uk"
+          onfocus="this.style.border='2px solid red';"
+        />
+        <area
+          shape="circle"
+          coords="350,150,50"
+          href="offer2.html"
+          alt="Знижка 2"
+          onblur="alert('You left the area');"
+          accesskey="2"
+          lang="uk"
+          onfocus="this.style.border='2px solid red';"
+        />
+      </map>
+
+      <p>
+        Ціна за упаковку:
+        <span class="special-offer">100<sup id="currency">грн</sup></span>
+        замість <del id="old-price">150 грн</del>
+      </p>
+      <p>
+        Додаткові вітаміни: Вітамін B<sub
+          id="vitamin-b"
+          lang="uk"
+          class="vitamin-class"
+          >2</sub
+        >
+      </p>
+
+      <p>
+        До пропозиції додано
+        <ins
+          id="new-item"
+          class="new-item-class"
+          >новий товар</ins
+        >
+        з обмеженим терміном дії.
+      </p>
+
+      <bdo
+        lang="ar"
+        dir="rtl"
+        >هذا النص يقرأ من اليمين إلى اليسار</bdo
+      >
+
+      <p>
+        Тут буде показано японський текст з рубі:
+        <ruby
+          >漢 <rp style="color: grey">(</rp
+          ><rt
+            class="highlight"
+            id="ruby-text"
+            >kan</rt
+          ><rp style="color: grey">)</rp></ruby
+        >
+      </p>
+    </div>
+
+    <footer
+      id="main-footer"
+      class="footer-class"
+    >
+      <p>&copy; 2024 Аптека "Здоров'я". Всі права захищені.</p>
+    </footer>
+  </body>
+</html>
