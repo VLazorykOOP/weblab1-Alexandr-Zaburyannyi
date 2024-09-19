@@ -9,6 +9,10 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Аптека - Контактна інформація</title>
+    <link
+            rel="stylesheet"
+            href="css/mycss.css"
+    />
   </head>
   <body>
     <h2
@@ -17,7 +21,13 @@
     >
       Контактна інформація
     </h2>
-
+    <header style="display: flex; justify-content: center">
+      <a
+        href="./index.html"
+        style="margin-right: 20px"
+        >Головна</a
+      ><a href="./index-2.html">Спеціальні Пропозиції</a>
+    </header>
     <address
       lang="uk"
       class="contact-address"
@@ -70,7 +80,7 @@
     4. Відправка замовлення клієнту.
     </pre>
 
-    <p>
+    <p style="margin: 20px">
       Щоб підтвердити замовлення, натисніть
       <kbd
         class="key"
@@ -79,7 +89,7 @@
       >.
     </p>
 
-    <p>
+    <p style="margin: 20px">
       Якщо виникає помилка, система виведе наступне повідомлення:
       <samp
         id="error-msg"
@@ -88,7 +98,7 @@
       >
     </p>
 
-    <p>
+    <p style="margin: 20px">
       Сума замовлення:
       <var
         id="order-total"
